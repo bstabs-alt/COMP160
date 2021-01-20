@@ -1,0 +1,29 @@
+import java.util.*;
+import java.text.*;
+
+public class IntCounterApp{
+  
+  public static void main(String [] args){
+    Scanner scan = new Scanner(System.in);
+    
+    for(int i = 0 ; i < 3; i++) {
+      
+      System.out.println("Which number do you wish to find?") ;
+      int input = scan.nextInt();
+      IntCounter count = new IntCounter(makeArray());
+      count.showTarget(input);
+    }
+    
+  }
+  
+  public static int [] makeArray(){
+    
+    double rand = Math.random() * (10 - 5 + 1) + 5;
+    int [] x = new int [(int) rand];
+    for(int i = 0; i < x.length; i++){
+      x[i] = (int)(Math.random()*5);
+    }
+    return x; 
+  }
+  
+}

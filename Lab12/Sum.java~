@@ -1,0 +1,25 @@
+import java.util.Scanner; 
+
+public class Sum{
+  
+  public static void main(String[]args){
+    Scanner scan = new Scanner(System.in);
+    int min = 2, sum = 0;
+    System.out.println("Enter number"); 
+    int input = scan.nextInt();
+    
+    while (input < 2){
+      System.out.println("Enter an integer greater than 1"); 
+      input = scan.nextInt();
+    }
+    
+    for (int count = min; count <= input; count++) {
+      sum = sum + count;
+    }
+    
+    if (sum % 2 == 0) {
+      System.out.println(sum);
+    }
+  
+  }
+}

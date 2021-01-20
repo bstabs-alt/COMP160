@@ -1,0 +1,23 @@
+public class Song {
+  private String songLine;
+  public Song (String sLine){
+    songLine = sLine;
+  }
+  
+  public String toString (){
+    return songLine; 
+  }
+  
+  public void process(){
+    
+    System.out.println( "Length: " + songLine.length());
+    System.out.println("Last: " + songLine.charAt(songLine.length()-1));
+        System.out.println( "Next Line: " + 
+                           songLine.indexOf(" ")
+                           
+                           );
+    
+  }
+  
+  
+}

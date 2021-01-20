@@ -1,0 +1,21 @@
+public class IntCounterTest{
+  
+    
+public static void main(String [] args){
+    
+    this.numArray = numArray;
+    double rand;
+    rand = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+    int randomInt = (int) rand;
+    
+    numArray = new int [randomInt];
+    
+    for(int i = 0; i < numArray.length; i = i +1){
+      numArray[i] = (int)(Math.random()*4);
+    }
+  }
+  
+  
+  
+  
+}

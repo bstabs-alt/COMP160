@@ -1,0 +1,22 @@
+import java.util.Scanner; 
+
+public class Repetition1{
+  
+  public static void main(String[]args){
+    Scanner scan = new Scanner(System.in);
+    int min = 2, sum = 0, count = 2;
+    System.out.println("Enter Integer greater than 1"); 
+    int input = scan.nextInt();
+    
+    if (input < 2){ System.out.println("Integer is not greater than 1"); scan.nextInt();
+    } else {
+      while (count <= input) { 
+        if (count % 2 == 0) { 
+          sum = sum + count; 
+        } 
+        count ++; 
+      }
+       System.out.println("The even sum of numbers between "+ min + " and "+ input + " is: " + sum);   
+    }   
+  }
+}

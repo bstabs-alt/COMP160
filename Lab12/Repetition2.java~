@@ -1,0 +1,26 @@
+import java.util.Scanner; 
+
+public class Repetition2{
+  
+  public static void main(String[]args){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter Text"); 
+    String input = scan.nextLine();
+    int vowelCount = 0, consenantCount = 0;
+
+    input = input.toLowerCase();
+    char ch = input.charAt(vowelCount);
+    
+    switch (ch)
+    {
+      case 'a': ++vowelCount; break;
+      case 'e': ++vowelCount; break;
+      case 'i': ++vowelCount; break; 
+      case 'o': ++vowelCount; break;
+      case 'u': ++vowelCount; break;
+    }
+        
+    System.out.println(vowelCount);
+    
+  }
+}
