@@ -1,0 +1,33 @@
+public class Customer {
+  private String name;
+  private boolean child;
+  private boolean student;
+  private boolean booked;
+  
+  public Customer(){}
+  public Customer (String nameIn, int age, boolean studentIn){
+    this.name = nameIn;
+    this.child = (age >= 5 && age <= 16);
+    this.student = studentIn;
+  }
+  
+  public String getName(){
+    return name;
+  }
+  
+  public boolean isChild(){
+    return child;
+  }
+  
+  public boolean isStudent(){
+    return student;
+  }
+  
+  public boolean isBooked(){
+    return booked;
+  }
+  public void setBooked(boolean b){
+    booked = b;
+  }
+  
+}

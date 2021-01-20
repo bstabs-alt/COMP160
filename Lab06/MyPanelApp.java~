@@ -1,0 +1,6 @@
+public class MyPanelApp {
+  public void main() {
+    MyPanel mp1 = new MyPanel();
+    mp1.decorate(java.awt.Color.blue, 180); 
+  }
+}
