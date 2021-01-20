@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+
+/*Implements a selection sorting algorithm on an ArrayList.*/
+public class Sorting {
+  
+  public static void main(String[] args){
+    
+    ArrayList <Integer> arraySort = new ArrayList <Integer> ();
+    
+    
+    arraySort.add(5);
+    arraySort.add(2);
+    arraySort.add(4);
+    arraySort.add(1);
+    arraySort.add(3);
+
+    
+    int min = 0;
+
+    for (int value = 0; value < arraySort.size(); value++){
+     
+      if(min < value){
+        min = min;
+      } else {
+        min = value;
+      }
+     
+
+    }
+    
+      System.out.println(arraySort);
+  }
+  
+  
+  
+}
